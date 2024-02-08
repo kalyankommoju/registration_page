@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Porsche Form</title>
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/thumbs/2x/porsche-6-logo.png">
+    <link rel="stylesheet" href="registration.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav>
+        <a href="#" class="a"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" class="a"><i class="fa-solid fa-car"></i> Cars</a>
+        <a href="#" class="a"><i class="fa-solid fa-phone"></i> Contant</a>
+    </nav>
+    <form id="main">
+        <p class="para"  style="color: whitesmoke;">START FOR FREE</p>
+        <h2 style="color: whitesmoke;"><i class="fa-solid fa-user" style="color: #0088cc;" ></i> Create Porsche account</h2>
+        <p class="para"  style="color: whitesmoke;">Already A Member? <a href="#">Log In</a></p>
+       <div class="form-group">
+            <label>Username</label><br/>
+            <input type="username" id="username" class="username" placeholder="Enter Username"/><br/>
+            <div id="usernameError" class="error-message"></div>
+       </div>
+
+       <div class="form-group">
+            <label>Mobile Number</label><br/>
+            <input type="text" id="number" class="number" placeholder="Enter Mobile Number"/><br/>
+            <div id="numberError" class="error-message"></div>
+       </div>
+
+        <div class="form-group">
+            <label>Email</label><br/>
+            <input type="email" id="email" class="email" placeholder="Enter Email"/><br/>
+            <div id="emailError" class="error-message"></div>
+        </div>
+
+       <div class="form-group">
+            <label>Password</label><br/>
+            <input type="password" id="pwd" class="pwd" placeholder="Enter Password"><br/>
+            <div id="passwordError" class="error-message"></div>
+       </div>
+
+        <div class="form-group">
+            <label>Confirm password</label><br/>
+            <input type="password" id="confirmpwd" class="confirmpwd" placeholder="Enter Password Again"><br/>
+            <div id="password" class="error-message"></div>
+        </div>
+
+       <div class="form-group">
+           <button type="button" onclick="valiadateForm()">Submit <i class="fa-solid fa-car-side"></i></button><br/>
+           <!-- <button type="button" onclick="resetform()">Reset</button><br/> -->
+       </div>
+    </form>
+    <div>
+        
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

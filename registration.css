@@ -1,0 +1,123 @@
+/* Styles for the form container */
+#main {
+    width: 400px;
+    margin: 2% auto 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    animation: slideInFromRight 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media (min-width: 992px) {
+    #main {
+        margin-right: 3%; /* Set right margin to 9% on laptops */
+    }
+}
+
+/* Media query for small devices */
+@media (max-width: 767px) {
+    #main {
+        margin-right: auto; /* Reset margin to auto for centering on small devices */
+    }
+    
+}
+
+/* Styles for form labels */
+label {
+    font-weight: bold;
+    color: rgb(216, 208, 208);
+}
+
+/* Styles for input fields */
+input[type="username"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    /* background-color: rgba(238, 238, 238, 0.4); */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-sizing: border-box; /* Makes padding and border not to increase the width */
+}
+
+/* Styles for error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Styles for the submit button */
+button {
+    background-color: #0f95d8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Styles for button hover effect */
+button:hover {
+    background-color: rgb(108, 108, 235);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    #main {
+        max-width: 100%;
+    }
+}
+.para{
+    font-size: 11px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(https://w.forfun.com/fetch/8b/8b66094547992fe518883a12472064cb.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.a{
+    text-decoration: none;
+    color: white;
+    margin-right: 3%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+nav{
+    margin-left: 40px ;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
